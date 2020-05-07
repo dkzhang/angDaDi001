@@ -1,5 +1,7 @@
 FROM node:alpine AS builder
 
+RUN apk update && apk upgrade && \
+    apk add --no-cache bash git openssh
 
 RUN git clone https://github.com/dkzhang/angDaDi001.git
 
