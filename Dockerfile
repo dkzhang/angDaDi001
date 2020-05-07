@@ -13,3 +13,5 @@ RUN npm install && \
 FROM nginx:alpine
 
 COPY --from=builder /angDaDi001/dist/* /usr/share/nginx/html/
+
+# docker run -p 80:80 my-angular-app:v1
